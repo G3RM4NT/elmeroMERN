@@ -8,22 +8,22 @@
 
 import { Schema, model } from "mongoose";
 
-const productsSchema = new Schema(
+const SucursalesSchema = new Schema(
   {
     name: {
       type: String,
       require: true,
     },
-    description: {
+    address: {
       type: String,
     },
-    price: {
+    telephone: {
       type: Number,
       require: true,
-      min: 0,
+      minLength: 8,
     },
-    stock: {
-      type: Number,
+    schedule: {
+      type: String,
       require: true,
       min: 0,
     },
@@ -34,4 +34,4 @@ const productsSchema = new Schema(
   }
 );
 
-export default model("Products", productsSchema);
+export default model("Products", SucursalesSchema);

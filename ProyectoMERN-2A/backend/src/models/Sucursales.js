@@ -34,4 +34,4 @@ const SucursalesSchema = new Schema(
   }
 );
 
-export default model("Products", SucursalesSchema);
+export default model("Sucursales", SucursalesSchema);

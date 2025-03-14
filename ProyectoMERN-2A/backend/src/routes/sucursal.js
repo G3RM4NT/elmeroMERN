@@ -6,12 +6,12 @@ const router = express.Router();
 
 router
   .route("/")
-  .get(SucursalesController.getSucursal)
-  .post(SucursalesController.createSucursal);
+  .get(SucursalesController.getsucursales)
+  .post(SucursalesController.createsucursales);
 
 router
   .route("/:id")
-  .put(SucursalesController.updateSucursal)
-  .delete(SucursalesController.deleteSucursal);
+  .put(SucursalesController.updatesucursales)
+  .delete(SucursalesController.deletesucursales);
 
 export default router;

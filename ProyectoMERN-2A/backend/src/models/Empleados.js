@@ -46,7 +46,6 @@ const EmpleadosSchema = new Schema(
     password: {
         type: String,
         require: true,
-        match: [passwordRegex, 'La contraseña debe tener al menos 8 caracteres y contener al menos una letra y un número']
       },
 
       telephone: {

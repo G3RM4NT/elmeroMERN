@@ -26,6 +26,12 @@ emailAdmin: process.env.ADMIN_EMAIL,
 passwordAdmin: process.env.ADMIN_PASSWORD
 
 
+},
+
+EMAIL: {
+user: process.env.USER_EMAIL,
+password: process.env.USER_PASS
+
 }
 
 

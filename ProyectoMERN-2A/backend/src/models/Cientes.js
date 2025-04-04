@@ -32,12 +32,10 @@ const ClientesSchema = new Schema(
     email: {
       type: String,
       require: true,
-      match: [emailRegex, 'Por favor ingresa un correo válido']
     },
     password: {
         type: String,
-        require: true,
-        match: [passwordRegex, 'La contraseña debe tener al menos 8 caracteres y contener al menos una letra y un número']
+        require: true
       },
 
       telephone: {
